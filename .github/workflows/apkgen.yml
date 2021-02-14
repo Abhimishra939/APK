@@ -15,7 +15,7 @@ jobs:
       - name: Starting APKGEN....
         env:
 
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          BOT_TOKEN: ${{ secrets.TOKEN }}
 
           CHAT_ID: ${{ secrets.CHAT_ID }}
 
