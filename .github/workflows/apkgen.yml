@@ -22,9 +22,6 @@ jobs:
         run: |
 
           sudo -H -E apt-get update
-
-          sudo -H -E apt-get install aapt
-
           sudo -H -E bash apkgen.sh
 
 
