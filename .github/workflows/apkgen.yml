@@ -1,0 +1,33 @@
+name: APK SOURCE GENERATOR
+
+on: [workflow_dispatch]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Starting APKGEN....
+
+        run: |
+
+          sudo -H -E apt-get update
+
+          sudo -H -E apt-get install aapt
+
+          sudo -H -E bash apkgen.sh
+
+
+
+
+
+
+
+
+
+
